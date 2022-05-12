@@ -1,0 +1,49 @@
+.ObjetivoLista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px 50px;
+  }
+  
+  @media (max-width: 1220px) {
+    .ObjetivoLista {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 840px) {
+    .ObjetivoLista {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .ObjetivoListaItem {
+    font-family: "Exo";
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    width: 315px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 400px) {
+    .ObjetivoListaItem {
+      width: 210px;
+      height: 180px;
+    }
+  }
+  
+  .ObjetivoListaItem > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  
+  .ObjetivoListaItem__descricao {
+    font-size: 0.85em;
+  }
+  
+  .ObjetivoListaItem__valor {
+    color: darkviolet;
+  }
